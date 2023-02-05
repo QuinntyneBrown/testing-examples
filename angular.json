@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "async": {
+      "projectType": "library",
+      "root": "projects/async",
+      "sourceRoot": "projects/async/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/async/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/async/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/async/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run"
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": true,
+          "style": "scss"
+        }
+      }
+    }
   }
 }
