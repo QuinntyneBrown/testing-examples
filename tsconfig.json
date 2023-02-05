@@ -5,6 +5,9 @@
     "paths": {
       "async": [
         "dist/async"
+      ],
+      "components": [
+        "dist/components"
       ]
     },
     "baseUrl": "./",

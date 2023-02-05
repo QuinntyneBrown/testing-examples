@@ -1,0 +1,31 @@
+{
+  "name": "async",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/async.mjs",
+  "es2020": "fesm2020/async.mjs",
+  "esm2020": "esm2020/async.mjs",
+  "fesm2020": "fesm2020/async.mjs",
+  "fesm2015": "fesm2015/async.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/async.mjs",
+      "es2020": "./fesm2020/async.mjs",
+      "es2015": "./fesm2015/async.mjs",
+      "node": "./fesm2015/async.mjs",
+      "default": "./fesm2020/async.mjs"
+    }
+  },
+  "sideEffects": false
+}
